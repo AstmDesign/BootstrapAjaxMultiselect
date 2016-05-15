@@ -60,7 +60,13 @@
     <script type="text/javascript">
       $(document).ready(function() {
 
-        $('#example-getting-started').multiselect();
+        $('#example-getting-started').multiselect(
+          {
+            includeSelectAllOption: true,
+            enableFiltering: true,
+            maxHeight: 150
+          }
+        );
 
       });
     </script>
